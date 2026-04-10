@@ -1,0 +1,30 @@
+name: GooseBattery
+options:
+  bundleIdPrefix: com.garvit
+  createIntermediateGroups: true
+configs:
+  Debug: debug
+  Release: release
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    MACOSX_DEPLOYMENT_TARGET: 14.0
+    GENERATE_INFOPLIST_FILE: YES
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 1.0
+    INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+    INFOPLIST_KEY_NSPrincipalClass: NSApplication
+targets:
+  GooseBattery:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: GooseBattery
+    settings:
+      base:
+        PRODUCT_NAME: GooseBattery
+        PRODUCT_BUNDLE_IDENTIFIER: com.garvit.GooseBattery
+        CODE_SIGNING_ALLOWED: NO
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
